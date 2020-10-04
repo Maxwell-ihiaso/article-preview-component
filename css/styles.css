@@ -14,7 +14,7 @@
    --light-grayish-blue: hsl(210, 46%, 95%);
 
    background-color: var(--light-grayish-blue);
-   padding: 3rem;
+   padding: 6rem 3rem 3rem;
  }
 
 .container {
