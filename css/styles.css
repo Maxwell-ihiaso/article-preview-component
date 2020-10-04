@@ -14,6 +14,7 @@
    --light-grayish-blue: hsl(210, 46%, 95%);
 
    background-color: var(--light-grayish-blue);
+   padding: 3rem;
  }
 
 .container {
@@ -21,10 +22,11 @@
   display: flex;
   flex-direction: column;
   max-width: 21rem;
-  margin: 4rem auto;
+  margin: 8rem auto 4rem;
   background-color: #fff;
   border-radius: 0.6rem;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.2);
 }
   .image {
     position: relative;
@@ -35,12 +37,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
   }
 
   .content {
     position:  relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 1.5rem;
   }
@@ -48,7 +50,8 @@
     .content-intro, .content-body, .content-footer {
       position: relative;
       display: block;
-      padding: 0.4rem 0;
+      padding: 0.2rem 0;
+      flex: 4;
     }
 
     .content-intro {
@@ -97,7 +100,6 @@
 
       .content-footer-button {
         position: relative;
-        flex: 1;
         background-color: var(--desaturated-dark-blue);
         padding: 0.5rem;
         text-align: center;
@@ -116,7 +118,6 @@
     left: -1.5rem;
     right: -1.5rem;;
     height: 5rem;
-
     background-color: var(--very-dark-grayish-blue);
     padding: 1.3rem;
     padding-right: 2rem;
@@ -180,17 +181,18 @@
 
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 718px) {
   .container {
     flex-direction: row;
-    max-width: 60rem;
-    max-height: 24.6rem;
-    margin: 8rem auto;
+    max-width: 55rem;
+    max-height: 20rem;
+    margin: 12rem auto 8rem;
     overflow: visible;
   }
     .image {
       flex: 5;
-      height: 25rem;
+      height: 20rem;
+      border-radius: 0.6rem 0 0 0.6rem;
     }
 
     .content {
@@ -222,7 +224,7 @@
 
     .active-state {
       left: auto;
-      right: 1%;
+      right: -10%;
       bottom: 100%;
       height: auto;
       border-radius: 10px;
@@ -232,7 +234,7 @@
     .active-state::after {
       position: absolute;
       top: 100%;
-      right: 17%;
+      right: 36%;
       display: inline-block;
       content: "";
       border: 1rem solid transparent;
@@ -251,22 +253,6 @@
         display: none;
       }
 }
-
-@media only screen and (min-width: 965px) {
-  .active-state {
-    right: -15%;
-  }
-
-  .active-state::after {
-    right: 55%;
-  }
-}
-
-
-
-
-
-
 
 
  .attribution { font-size: 0.85rem; text-align: center; }
