@@ -14,7 +14,7 @@
    --light-grayish-blue: hsl(210, 46%, 95%);
 
    background-color: var(--light-grayish-blue);
-   padding: 3rem;
+   padding: 0 3rem;
  }
 
 .container {
@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   max-width: 21rem;
-  margin: 8rem auto 4rem;
+  margin: 4rem auto 3rem;
   background-color: #fff;
   border-radius: 0.6rem;
   overflow: hidden;
@@ -186,7 +186,7 @@
     flex-direction: row;
     max-width: 55rem;
     max-height: 20rem;
-    margin: 12rem auto 8rem;
+    margin: 14rem auto 6rem;
     overflow: visible;
   }
     .image {
@@ -229,7 +229,7 @@
       height: auto;
       border-radius: 10px;
       padding: 1rem 1.3rem;
-      box-shadow: 0 0.6rem 0 rgba(0 , 0, 0, 0.04);
+      box-shadow: 0 0.6rem 0 rgba(0 , 0, 0, 0.03);
     }
     .active-state::after {
       position: absolute;
